@@ -1,0 +1,3 @@
+INDEX VERSION 1.4+D:\coding material\projects\dr anjul website\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4265261091.index
+3632351061.index
