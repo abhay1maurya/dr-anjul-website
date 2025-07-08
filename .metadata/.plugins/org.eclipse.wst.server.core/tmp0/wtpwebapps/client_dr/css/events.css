@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* Common styles for sections */
+.events-section, .gallery-section {
+  padding: 60px 20px;
+  background-color: #f4f9f9;
+  text-align: center;
+}
+
+.events-section h2, .gallery-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+/* Event list styling */
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Event card styling */
+.event-card {
+  background-color: #fff;
+  border-left: 6px solid #00b894;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.event-card h3 {
+  margin-bottom: 10px;
+  color: #0077cc;
+  font-size: 1.5rem;
+}
+
+/* Gallery grid styling */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Event details styling */
+.event-details {
+  display: none;
+  margin-top: 10px;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* More Info button styling */
+.more-info-btn {
+  background-color: #00b894;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.more-info-btn:hover {
+  background-color: #0077cc;
+}
+
+/* Load More button styling */
+.load-more-btn {
+  margin-top: 20px;
+  background-color: #0077cc;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: none;
+  transition: background-color 0.3s ease;
+}
+
+.load-more-btn:hover {
+  background-color: #005fa3;
+}
+
+/* Event card hover effect */
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+/* For smaller screens: make sure the gallery grid remains responsive */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .event-card {
+    width: 100%;
+  }
+
+  .events-section h2, .gallery-section h2 {
+    font-size: 1.5rem;
+  }
+}
