@@ -1,5 +1,0 @@
-INDEX VERSION 1.134
-D:\coding material\projects\dr anjul website\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1798000226.index
-\client_dr\src\main\resources
-D:\coding material\projects\dr anjul website\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3632351061.index
-\client_dr\src\main\java
