@@ -21,3 +21,5 @@ Features include:
 
    ```bash
    git clone https://github.com/abhay1maurya/dr-anjul-website.git
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
