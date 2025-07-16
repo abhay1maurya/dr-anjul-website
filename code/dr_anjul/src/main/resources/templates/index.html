@@ -20,63 +20,100 @@
 <body>
 <!-- nav baar -->
   <header class="main-header">
-    <div class="logo">
-      <img src="images/logo.png" alt="Dr. ANJUL's Homeopathy Logo" />
-      <h1>Dr. ANJUL's <span>HOMEOPATHY</span></h1>
-    </div>
-    <nav class="nav-links">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About Me</a>
-      <a href="#consultancy">Consultancy</a>
-      <a href="#youtube">YouTube</a>
-      <a href="#events">Events</a>
-      <a href="#event-gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-     
-    </nav>
-  </header>
+  <div class="logo">
+    <img src="images/logo.png" alt="Dr. ANJUL's Homeopathy Logo" />
+    <h1>Dr. ANJUL's <span>HOMEOPATHY</span></h1>
+  </div>
+
+  <!-- Hamburger icon -->
+  <div class="hamburger" id="hamburger">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#consultancy">Consultancy</a>
+    <a href="#youtube">YouTube</a>
+    <a href="#events">Events</a>
+    <a href="#event-gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
 <!-- home section-->
 <section id="home">
   <h1>Welcome to Dr. Anjul's Homeopathy</h1>
-  <p>Personalized, natural healing through expert homeopathic care.</p>
+  <p>Healing the Root, Not Just the Routine</p>
   <a href="consultancy.html" class="btn">Book a Consultation</a>
 </section>
+
 <!-- ABOUT -->
 <section id="about" class="about-section">
   <div class="about-container">
-    <div class="about-image" id="aboutImage"></div>
+    <div class="about-image" id="aboutImage">
+      <!-- Optional: Insert <img src="images/dr-anjul.jpg" alt="Dr. Anjul" /> if you want to use an actual image -->
+    </div>
     <div class="about-text hidden">
-      <h2>About Dr. Anjul</h2>
-      <p >I am a dedicated homeopathy doctor with a passion for helping people heal naturally.</p>
+      <h2>Meet Dr. Anjul</h2>
+      <p>
+        <strong>Dr. Anjul</strong> is a devoted homeopathy practitioner known for her gentle approach and deep-rooted commitment to natural healing. With years of experience and a heart full of compassion, she blends the art of classical homeopathy with the understanding of modern-day health challenges.
+      </p>
+      <p>
+        She believes that true healing begins from within — by treating not just symptoms but the entire individual. Her personalized treatments aim to restore balance to both body and mind, offering long-lasting relief without side effects.
+      </p>
+      <p>
+        Through her online consultancy services and educational YouTube content, Dr. Anjul continues to empower people to take charge of their wellness journey. Her mission is clear and impactful: <em>“To bring health and harmony to every home through the power of homeopathy.”</em>
+      </p>
     </div>
   </div>
 </section>
+
 
 <!-- CINSULTANCY-->
  <section id="consultancy" class="consultancy-section">
   <div class="consultancy-content">
-    <div class="consultancy-text">
+    <div class="consultancy-text fade-in-up">
       <h2>Consultancy Services</h2>
       <p class="consultancy-intro">
-        Dr. Anjul offers personalized homeopathic consultancy tailored to your unique health needs.
-        With a holistic approach, he addresses the root cause of ailments to ensure long-term well-being.
+        Experience compassionate, personalized care with Dr. Anjul’s homeopathy consultancy. 
+        Every consultation is tailored to your individual health needs, aiming to identify the root causes rather than just suppress symptoms. 
+        Her holistic approach promotes long-lasting wellness—naturally.
       </p>
 
       <ul class="consultancy-features">
-        <li><i class="fas fa-check-circle"></i> One-on-one virtual consultation</li>
-        <li><i class="fas fa-check-circle"></i> Treatment for chronic and acute conditions</li>
-        <li><i class="fas fa-check-circle"></i> Safe, side-effect-free remedies</li>
-        <li><i class="fas fa-check-circle"></i> Confidential and empathetic approach</li>
+        <li><i class="fas fa-check-circle"></i> One-on-one virtual consultations</li>
+        <li><i class="fas fa-check-circle"></i> Personalized treatment for chronic and acute conditions</li>
+        <li><i class="fas fa-check-circle"></i> 100% natural and side-effect-free remedies</li>
+        <li><i class="fas fa-check-circle"></i> Confidential, empathetic, and patient-centered care</li>
       </ul>
 
-      <a href="consultancy" class="btn-consult">Book Consultancy</a>
+      <a href="consultancy" class="btn-consult">Book a Consultation</a>
     </div>
 
-    <div class="consultancy-image">
-      <img src="images/consult.jpg" alt="Consultancy" />
+    <div class="consultancy-image fade-in-up">
+      <img src="images/consult.jpg" alt="Homeopathy Consultancy with Dr. Anjul" />
     </div>
   </div>
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const fadeElements = document.querySelectorAll('.fade-in-up');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target); // Trigger only once
+      }
+    });
+  }, { threshold: 0.2 });
+
+  fadeElements.forEach(el => observer.observe(el));
+});
+</script>
+  
 </section>
+
 
 
 <!-- YOUTUBE-->
