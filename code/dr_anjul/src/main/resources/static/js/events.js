@@ -3,47 +3,37 @@ document.addEventListener("DOMContentLoaded", () => {
   const loadMoreBtn = document.getElementById("load-more-events");
 
   moreInfoBtns.forEach((btn) => {
-    btn.addEventListener("click", (event) => {
-      const eventCard = event.target.closest(".event-card");
+    btn.addEventListener("click", () => {
+      const eventCard = btn.closest(".event-card");
       const eventDetails = eventCard.querySelector(".event-details");
-
-      // Toggle event details visibility with animation
-      if (eventDetails.classList.contains("visible")) {
-        eventDetails.classList.remove("visible");
-      } else {
-        eventDetails.classList.add("visible");
-      }
+      eventDetails.classList.toggle("visible");
     });
   });
 
-  // Simulate loading more events by showing the "Load More" button
-  loadMoreBtn.style.display = "block";
-  
+  // Show "Load More" initially
+  loadMoreBtn.style.display = "inline-block";
+
   loadMoreBtn.addEventListener("click", () => {
     const newEvent = document.createElement("div");
     newEvent.classList.add("event-card");
     newEvent.innerHTML = `
       <h3>New Event: Health Consultation</h3>
-      <p>Date: 5 June 2025</p>
-      <p>Location: Dr. Anjul's Clinic</p>
+      <p><strong>Date:</strong> 5 June 2025</p>
+      <p><strong>Location:</strong> Dr. Anjul's Clinic</p>
       <button class="more-info-btn">More Info</button>
       <div class="event-details">
-        <p>Description: A consultation on improving your mental and physical health through homeopathy.</p>
+        <p><strong>Description:</strong> A consultation on improving your mental and physical health through homeopathy.</p>
       </div>
     `;
-    
     document.querySelector(".events-list").appendChild(newEvent);
 
-    // Add fade-in effect for the new event
-    setTimeout(() => {
-      newEvent.classList.add("fade-in");
-    }, 100); // Small delay before fade-in
-    
-    // Reattach the event listener for the new event card
-    const newMoreInfoBtn = newEvent.querySelector(".more-info-btn");
-    newMoreInfoBtn.addEventListener("click", () => {
+    const newBtn = newEvent.querySelector(".more-info-btn");
+    newBtn.addEventListener("click", () => {
       const eventDetails = newEvent.querySelector(".event-details");
       eventDetails.classList.toggle("visible");
     });
+
+    // Optional: disable button or load more events again
+    loadMoreBtn.style.display = "none";
   });
 });
