@@ -14,4 +14,18 @@ public class maincontroller {
 	public String viewconsultancy() {
 		return "consultancy";
 	}
+	
+	 @GetMapping("/terms")
+	    public String termsPage() {
+	        return "terms"; // maps to terms.html in /templates
+	    }
+	 
+	 @GetMapping("/terms-redirect")
+	 public String redirectToContact() {
+	     return "redirect:/#contact";
+	 }
 }
+
+
+   
+

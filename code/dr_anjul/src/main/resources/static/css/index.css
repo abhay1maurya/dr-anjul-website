@@ -113,3 +113,22 @@ body {
     display: flex;
   }
 }
+
+.home-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit; /* Keeps the original text color */
+  gap: 0.8rem;     /* spacing between image and text */
+}
+
+.home-link:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+

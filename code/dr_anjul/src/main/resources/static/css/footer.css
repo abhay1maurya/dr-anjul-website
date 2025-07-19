@@ -33,6 +33,7 @@
 
 .footer__col {
     position: relative;
+    padding: 15px;
 }
 
 .footer__logo {
@@ -153,7 +154,7 @@
 }
 
 .footer__newsletter input {
-    width: 100%;
+    width: 85%;
     padding: 0.9rem 1.5rem;
     border: none;
     border-radius: 50px;
