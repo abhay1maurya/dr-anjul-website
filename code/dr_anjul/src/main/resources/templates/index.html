@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="css/consultancyh.css">
   <link rel="stylesheet" href="css/events.css">
   <link rel="stylesheet" href="css/eventgall.css">
+  <link rel="stylesheet" href="css/features.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/testimonial.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
@@ -43,6 +46,7 @@
 
 <!-- home section-->
 <section id="home">
+
   <h1>Welcome to Dr. Anjul's Homeopathy</h1>
   <p>Healing the Root, Not Just the Routine</p>
   <a href="consultancy.html" class="btn">Book a Consultation</a>
@@ -70,6 +74,80 @@
   </div>
 </section>
 
+<!-- Features/Highlights Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section__title" align="center">Why Choose Our Homeopathic Care</h2>
+            <div class="features__grid">
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="feature__title">Experienced Practitioner</h3>
+                    <p class="feature__text">20+ years of experience in homeopathic treatment</p>
+                </div>
+                
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="feature__title">Holistic Approach</h3>
+                    <p class="feature__text">Treating the root cause, not just symptoms</p>
+                </div>
+                
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="feature__title">Natural Remedies</h3>
+                    <p class="feature__text">Safe and effective natural treatments</p>
+                </div>
+                
+                <div class="feature__card">
+                    <div class="feature__icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3 class="feature__title">Child-Friendly</h3>
+                    <p class="feature__text">Gentle treatments suitable for all ages</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section__title" align="center">Patient Experiences</h2>
+            <div class="testimonials__slider">
+                <div class="testimonial__card">
+                    <div class="testimonial__content">
+                        <p>"Dr. Anjul's treatment helped me overcome chronic migraines when nothing else worked."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <img src="images/testimonial1.jpg" alt="Patient" loading="lazy">
+                        <h4>Rahul Sharma</h4>
+                        <span>New Delhi</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial__card">
+                    <div class="testimonial__content">
+                        <p>"My child's allergies improved significantly after just a few weeks of treatment."</p>
+                    </div>
+                    <div class="testimonial__author">
+                        <img src="images/testimonial2.jpg" alt="Patient" loading="lazy">
+                        <h4>Priya Patel</h4>
+                        <span>Mumbai</span>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__controls">
+                <button class="slider__prev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider__next" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+    
 
 <!-- CINSULTANCY-->
  <section id="consultancy" class="consultancy-section">
@@ -230,6 +308,60 @@ document.addEventListener("DOMContentLoaded", () => {
   </div>
 </section>
 
+ <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <img src="images/logo-white.png" alt="Dr. Anjul Homeopathy Logo" class="footer__logo">
+                    <p class="footer__about">Providing compassionate homeopathic care for over two decades.</p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer__col">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="about">About</a></li>
+                        <li><a href="services">Services</a></li>
+                        <li><a href="gallery">Gallery</a></li>
+                        <li><a href="contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__col">
+                    <h3 class="footer__title">Contact Info</h3>
+                    <ul class="footer__contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Healing Street, New Delhi</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-envelope"></i> info@dranjulhomeo.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer__col">
+                    <h3 class="footer__title">Newsletter</h3>
+                    <form class="footer__newsletter">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn btn--primary">Subscribe</button>
+                    </form>
+                    <p class="footer__disclaimer">Get health tips and updates directly to your inbox.</p>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2023 Dr. Anjul Homeopathy. All Rights Reserved.</p>
+                <div class="footer__legal">
+                    <a href="privacy">Privacy Policy</a>
+                    <a href="terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
 
 <script src="js/index.js"></script>
@@ -239,7 +371,7 @@ document.addEventListener("DOMContentLoaded", () => {
 <script src="js/contact.js"></script>
 <script src="js/events.js"></script>
 <script src="js/eventgall.js"></script>
-
+<script src="js/testimonial.js"></script>
 
 
 </body>

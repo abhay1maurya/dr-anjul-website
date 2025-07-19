@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background: url("/images/home-bg.jpg") center center/contain no-repeat; /* Replace with your image */
+  background: url("/images/home-bg.jpg") center center/cover no-repeat; /* Replace with your image */
 }
 
 #home::before {
