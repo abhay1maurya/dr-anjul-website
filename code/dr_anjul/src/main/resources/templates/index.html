@@ -19,6 +19,7 @@
   
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
 
 </head>
 <body>
@@ -58,22 +59,53 @@
 
 <!-- ABOUT -->
 <section id="about" class="about-section">
-  <div class="about-container">
-    <div class="about-image">
-  <img src="images/drimg.jpg" alt="Dr. Anjul">
-</div>
+  <div class="container">
+    <div class="about-container">
+      <div class="about-image">
+        <div class="image-wrapper">
+          <img src="images/drimg.jpg" alt="Dr. Anjul" loading="lazy">
+          <div class="image-overlay">
+            <div class="years-badge">
+              <span class="years-number">15+</span>
+              <span class="years-text">Years Experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="about-text hidden">
-      <h2>Meet Dr. Anjul</h2>
-      <p>
-        <strong>Dr. Anjul</strong> is a devoted homeopathy practitioner known for her gentle approach and deep-rooted commitment to natural healing. With years of experience and a heart full of compassion, she blends the art of classical homeopathy with the understanding of modern-day health challenges.
-      </p>
-      <p>
-        She believes that true healing begins from within — by treating not just symptoms but the entire individual. Her personalized treatments aim to restore balance to both body and mind, offering long-lasting relief without side effects.
-      </p>
-      <p>
-        Through her online consultancy services and educational YouTube content, Dr. Anjul continues to empower people to take charge of their wellness journey. Her mission is clear and impactful: <em>“To bring health and harmony to every home through the power of homeopathy.”</em>
-      </p>
+      <div class="about-content">
+        <div class="about-text">
+          <h2 class="section-title">Meet <span>Dr. Anjul</span></h2>
+          <div class="section-subtitle">Homeopathy Specialist</div>
+          
+          <p class="highlight-paragraph">
+            <strong>Dr. Anjul</strong> is a devoted homeopathy practitioner known for her gentle approach and deep-rooted commitment to natural healing.
+          </p>
+          
+          <ul class="about-features">
+            <li><i class="fas fa-check-circle"></i> Classical homeopathy expert</li>
+            <li><i class="fas fa-check-circle"></i> Personalized treatment plans</li>
+            <li><i class="fas fa-check-circle"></i> Holistic mind-body approach</li>
+            <li><i class="fas fa-check-circle"></i> Online consultations available</li>
+          </ul>
+          
+          <p>
+            Through her online consultancy services and educational YouTube content, Dr. Anjul continues to empower people to take charge of their wellness journey. Her mission is clear and impactful:
+          </p>
+          
+          <div class="mission-quote">
+            <i class="fas fa-quote-left"></i>
+            <blockquote>"To bring health and harmony to every home through the power of homeopathy."</blockquote>
+          </div>
+          
+          <div class="about-cta">
+            <a href="#consultation" class="btn btn-primary">Book Consultation</a>
+            <a href="https://youtube.com" target="_blank" class="btn btn-secondary">
+              <i class="fab fa-youtube"></i> Watch Videos
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -310,7 +342,6 @@ document.addEventListener("DOMContentLoaded", () => {
   		<i class="fab fa-threads"></i>
 	</a>
 
-    </a>
     <a href="mailto:dranjul06@gmail.com" title="Email" data-tooltip="Email">
       <i class="fas fa-envelope"></i>
     </a>

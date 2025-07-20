@@ -126,9 +126,3 @@ body {
   opacity: 0.9;
   cursor: pointer;
 }
-
-html {
-  scroll-behavior: smooth;
-}
-
-

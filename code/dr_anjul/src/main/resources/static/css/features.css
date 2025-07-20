@@ -50,7 +50,7 @@
     letter-spacing: 2px;
     font-size: 0.95rem;
     background: rgba(42, 127, 98, 0.1);
-    padding: 8px 20px;
+    padding: 8px 10px;
     border-radius: 50px;
 }
 
@@ -76,7 +76,7 @@
 
 .features__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 2.5rem;
     margin-top: 3rem;
 }
